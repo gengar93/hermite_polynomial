@@ -1,0 +1,37 @@
+MATRIX CLASS
+
+This class has mostly everything required.
+
+Input : a 2d array of doubles
+
+Attributes
+- the 2d array
+- number of rows
+- number of columns
+
+Methods
+- add(): two overloaded methods, one object method taking another matrix and a static method which takes two
+- multiplyWithScalar(): takes a double and scales all elements by this number
+- multiply(): two overloaded methods, one object method which takes another matrix and another which takes a polynomial (a column matrix)
+- toString(): a proper way to print matrices has been implemented
+
+
+POLYNOMIAL
+
+This class has a few additions pending
+
+Input: either a 1d array of doubles or a column matrix
+
+Attributes:
+- the degree of the polynomial
+- a column matrix to hold coefficients
+
+Methods
+- toString(): a tuple representation of the polynomial
+
+Possible improvements and additions
+- trailing zeroes from the input should be removed.
+- the degree is obtained from the length of the coefficient array. trailing zeroes are not ignored. this should be fixed.
+- a method to add polynomials. care should be taken when their degrees differ since the underlying arrays holding coeff are different.
+- a good method to print
+
